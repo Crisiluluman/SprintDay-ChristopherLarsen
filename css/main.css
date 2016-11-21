@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:100,400,500');
+
+
+* {
+  font-family: 'Exo', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+
+
+header {
+  background-image: url("../images/top_banner.jpg");
+  background-size: cover;
+  height:815px;
+  position: relative;
+}
+
+#controller {
+  width:500px;
+  margin:0 auto;
+  height:500px;
+  color: #ffffff;
+  text-align: center;
+  padding:330px 0 0 0;
+
+}
+
+#controller h1 {
+  font-size: 52px;
+  font-weight: 100;
+}
+
+.fa.fa-play-circle {
+  color:#ffffff;
+  font-size: 56px;
+  float:left;
+  clear: both;
+  margin-left:232px;
+  padding: 10px 0;
+}
+
+a#banner_botton {
+  padding:8px 15px;
+  background-color: #009b0d;
+  border-radius: 3px;
+  color:#ffffff;
+  font-size: 14px;
+  font-weight: 100;
+  float:left;
+  clear: both;
+  margin-left:215px;
+  margin-bottom: 10px;
+}
+
+
+span#banner_botton_text {
+  font-size: 12px;
+  font-weight: 100;
+  float:left;
+  clear: both;
+  margin-left:185px;
+}
+
+nav {
+  position: absolute;
+  right:20px;
+  top:20px;
+}
+
+nav ul li {
+  float:left;
+  border-right: 1px solid #fff;
+  }
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  color:#fff;
+  padding: 0 15px;
+
+}
+
+
+section#left {
+  float:left;
+  width:60%;
+
+}
+
+section article {
+  padding:90px 80px;
+}
+
+section h1 {
+  color:#009b0d;
+  font-size: 16px;
+}
+
+section h2 {
+  font-size:40px;
+  padding-bottom: 50px;
+}
+
+section p {
+  font-weight: 100;
+}
+
+section#right {
+  float:right;
+  width:40%;
+  background-color: black;
+  height: 725px;
+  background-image: url("../images/kirk_picard.png");
+}
