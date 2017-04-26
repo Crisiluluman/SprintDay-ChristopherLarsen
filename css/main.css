@@ -7,8 +7,6 @@
   padding:0;
 }
 
-
-
 header {
   background-image: url("../images/top_banner.jpg");
   background-size: cover;
@@ -23,7 +21,6 @@ header {
   color: #ffffff;
   text-align: center;
   padding:330px 0 0 0;
-
 }
 
 #controller h1 {
@@ -53,7 +50,6 @@ a#banner_botton {
   margin-bottom: 10px;
 }
 
-
 span#banner_botton_text {
   font-size: 12px;
   font-weight: 100;
@@ -62,27 +58,33 @@ span#banner_botton_text {
   margin-left:185px;
 }
 
-nav {
-  position: absolute;
-  right:20px;
-  top:20px;
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #151515;
+    overflow: hidden;
 }
 
-nav ul li {
-  float:left;
-  border-right: 1px solid #fff;
-  }
-
-nav ul li:last-child {
-  border-right: none;
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-nav ul li a {
-  color:#fff;
-  padding: 0 15px;
-
+/* Change the color of links on hover */
+.topnav a:hover {
+/* background-color: #fff; */
+    color: #009b0d;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
 
 section#left {
   float:left;
@@ -114,4 +116,143 @@ section#right {
   background-color: black;
   height: 725px;
   background-image: url("../images/kirk_picard.png");
+}
+iframe {
+  min-width: 100%;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+/* Mobile Phones Portrait + Landscape */
+@media screen and (max-device-width: 480px) and (orientation: portrait),
+       screen and (max-device-width: 740px) and (orientation: landscape),
+       screen and (max-width:740px)
+{
+
+  * {
+    font-family: 'Exo', sans-serif;
+    margin:;
+    padding:;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+  p {
+
+  }
+  body {
+
+  }
+  header{
+    height:780px;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+    .topnav a.icon {
+    right: 0%;
+    display: block;
+    position: fixed;
+  }
+    .topnav.responsive {
+    position: fixed;
+    width: 151px;
+    right: 0%;
+  }
+    .topnav.responsive a.icon {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: right;
+  }
+
+  #controller {
+    width:100%;
+    margin: 0 auto;
+    height: 100%;
+    padding:170px 10px 0 10px;
+  }
+
+  .fa.fa-play-circle {
+    color:#ffffff;
+    font-size: 56px;
+    float:left;
+    clear: both;
+    margin: 0 auto;
+    width:100%;
+    padding: 10px 0;
+  }
+
+  a#banner_botton {
+    padding-left: 10px;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: auto;
+    width: 100%;
+    left: 0%;
+  }
+
+  #top_centering {
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  span#banner_botton_text {
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+
+  #controller h1 {
+    font-size: 36px;
+    font-weight: 100;
+    width:100%;
+    margin: center;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size:40px;
+    padding: 0px 0px 50px 0px;
+  }
+
+  section article {
+    padding: 5px 25px 5px 25px;
+    background: #000000;
+
+  }
+  section#left {
+    width: 100%;
+  }
+
+  section p {
+    color: #ffffff;
+    padding: 0px 0px 0px 0px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  section#right {
+    background-size: cover;
+    width: 100%;
+    height: 725px;
+    background-image: url("../images/kirk_picard.png");
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    min-width: 90%;
+    max-width: 100%;
+    margin-top: 10px;
+    min-height: 200px;
+
+  }
 }
